@@ -1,0 +1,2 @@
+2018-10-18T13:31:52.487Z - [32minfo[39m: Listening onport 4500
+2018-10-18T13:31:52.496Z - [31merror[39m: Database connection failed by: error: password authentication failed for user "armine_ha"

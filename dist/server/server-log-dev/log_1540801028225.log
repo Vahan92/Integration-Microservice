@@ -1,0 +1,20 @@
+2018-10-29T08:17:08.284Z - [32minfo[39m: Listening onport 4500
+2018-10-29T08:17:08.295Z - [32minfo[39m: Data Base connection success ... development
+2018-10-29T08:21:57.029Z - [31merror[39m:  message=operator does not exist: text = integer, stack=error: operator does not exist: text = integer
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=199, severity=ERROR, code=42883, detail=undefined, hint=No operator matches the given name and argument types. You might need to add explicit type casts., position=75, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=parse_oper.c, line=731, routine=op_error
+2018-10-29T08:21:57.031Z - [31merror[39m:  message=operator does not exist: text = integer, stack=error: operator does not exist: text = integer
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=199, severity=ERROR, code=42883, detail=undefined, hint=No operator matches the given name and argument types. You might need to add explicit type casts., position=75, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=parse_oper.c, line=731, routine=op_error

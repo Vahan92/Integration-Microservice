@@ -1,0 +1,2 @@
+::1 - - [29/Oct/2018:07:49:33 +0000] "DELETE /api/v2/delete HTTP/1.1" 200 16 "-" "PostmanRuntime/7.3.0"
+::1 - - [29/Oct/2018:07:51:37 +0000] "DELETE /api/v2/delete HTTP/1.1" 200 16 "-" "PostmanRuntime/7.3.0"

@@ -1,0 +1,4 @@
+::1 - - [26/Oct/2018:08:01:19 +0000] "GET /api/v2/delete HTTP/1.1" 404 152 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"
+::1 - - [26/Oct/2018:08:01:31 +0000] "GET /api/v2/status HTTP/1.1" 404 152 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"
+::1 - - [26/Oct/2018:08:01:51 +0000] "GET /api/v2/validate HTTP/1.1" 400 77 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"
+::1 - - [26/Oct/2018:08:03:29 +0000] "GET /api/v2/validate HTTP/1.1" 400 103 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"

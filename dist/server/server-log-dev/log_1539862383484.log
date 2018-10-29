@@ -1,0 +1,2 @@
+2018-10-18T11:33:03.528Z - [32minfo[39m: Listening onport 4500
+2018-10-18T11:33:03.536Z - [31merror[39m: Database connection failed by: error: password authentication failed for user "postgres"

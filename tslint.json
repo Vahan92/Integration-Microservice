@@ -1,0 +1,12 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "only-arrow-functions": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "space-before-function-paren": false
+  },
+  "exclude": "**/node_modules/**/*,tests/*"
+}

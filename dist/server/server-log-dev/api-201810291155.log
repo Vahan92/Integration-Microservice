@@ -1,0 +1,6 @@
+::1 - - [29/Oct/2018:07:55:29 +0000] "DELETE /api/v2/delete HTTP/1.1" 200 16 "-" "PostmanRuntime/7.3.0"
+::1 - - [29/Oct/2018:07:57:24 +0000] "GET /api/v2/delete HTTP/1.1" 404 152 "-" "PostmanRuntime/7.3.0"
+::1 - - [29/Oct/2018:07:58:59 +0000] "DELETE /api/v2/delete?userKey=133&platform=wordpress HTTP/1.1" 200 16 "-" "PostmanRuntime/7.3.0"
+::1 - - [29/Oct/2018:08:00:04 +0000] "DELETE /api/v2/delete HTTP/1.1" 200 16 "-" "PostmanRuntime/7.3.0"
+::1 - - [29/Oct/2018:08:03:42 +0000] "DELETE /api/v2/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.3.0"
+::1 - - [29/Oct/2018:08:03:52 +0000] "DELETE /api/v2/delete HTTP/1.1" 200 16 "-" "PostmanRuntime/7.3.0"

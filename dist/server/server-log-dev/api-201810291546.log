@@ -1,0 +1,2 @@
+::1 - - [29/Oct/2018:11:46:06 +0000] "GET /api/v2/validate?platform=wordpress HTTP/1.1" 400 77 "-" "PostmanRuntime/7.3.0"
+::1 - - [29/Oct/2018:11:46:44 +0000] "GET /api/v2/validate?platform=wordpress HTTP/1.1" 400 103 "-" "PostmanRuntime/7.3.0"

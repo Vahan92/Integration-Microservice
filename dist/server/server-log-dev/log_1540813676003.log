@@ -1,0 +1,14 @@
+2018-10-29T11:47:56.054Z - [32minfo[39m: Listening onport 4500
+2018-10-29T11:47:56.063Z - [32minfo[39m: Data Base connection success ... development
+2018-10-29T11:47:57.970Z - [31merror[39m: Invalid request parameters
+2018-10-29T12:14:17.915Z - [31merror[39m: Unexpected token F in JSON at position 56 stack=SyntaxError: Unexpected token F in JSON at position 56
+    at Object.parse (native)
+    at parse (/home/armine_ha/Desktop/integration-microservice/node_modules/body-parser/lib/types/json.js:89:19)
+    at /home/armine_ha/Desktop/integration-microservice/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/home/armine_ha/Desktop/integration-microservice/node_modules/raw-body/index.js:224:16)
+    at done (/home/armine_ha/Desktop/integration-microservice/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/home/armine_ha/Desktop/integration-microservice/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:86:13)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)

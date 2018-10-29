@@ -1,0 +1,2 @@
+2018-10-18T13:52:09.363Z - [32minfo[39m: Listening onport 4500
+2018-10-18T13:52:09.369Z - [31merror[39m: Database connection failed by: Error: connect ECONNREFUSED 127.0.0.1:5433
