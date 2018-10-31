@@ -6,9 +6,9 @@
     "deploy:build": "gulp deploy:build",
     "build": "tsc -p .",
     "lint": "tslint './**/*.ts' -c ./tslint.json --fix",
-    "_run:server": "NODE_ENV=development node dist/server/bin/www.js",
+    "_run:server": "NODE_ENV=test node dist/server/bin/www.js",
     "start:server": "npm run build && concurrently --kill-others \"tsc -w -p .\" \"npm run _run:server\"",
-    "test": "mocha --reporter spec --compilers ts:ts-node/register 'tests/**/*.test.ts'"
+    "test": "NODE_ENV=test mocha --reporter spec --compilers ts:ts-node/register 'tests/**/*.test.ts'"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -30,7 +30,6 @@
     "nock": "^10.0.1",
     "node-rsa": "^1.0.0",
     "pg-promise": "^5.9.7",
-    "sinon": "^7.0.0",
     "uuid": "^3.2.1",
     "winston": "^2.3.1"
   },
@@ -41,7 +40,7 @@
     "@types/express": "^4.11.1",
     "@types/jasmine": "^2.5.54",
     "@types/jasminewd2": "~2.0.2",
-    "@types/mocha": "^5.2.0",
+    "@types/mocha": "^5.2.5",
     "@types/mongoose": "^4.7.34",
     "@types/morgan": "^1.7.32",
     "@types/node": "^6.0.100",
@@ -65,12 +64,12 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "mocha": "^5.1.1",
     "node-mocks-http": "^1.7.3",
-    "nodemon": "^1.18.4",
+    "nodemon": "^1.18.5",
     "protractor": "~5.1.2",
     "run-sequence": "^2.2.0",
     "save": "^2.3.2",
     "should": "^13.2.3",
-    "ts-node": "^6.2.0",
+    "ts-node": "^7.0.1",
     "tslint": "~5.3.2",
     "typescript": "^2.3.4",
     "typings": "^2.1.1",

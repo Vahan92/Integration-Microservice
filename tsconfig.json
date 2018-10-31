@@ -16,7 +16,7 @@
         "typeRoots": [
             "./node_modules/@types"
         ],
-        "types": ["jasmine"]
+        "types": ["node", "chai", "mocha"]
     },
     "lint": [
         {

@@ -163,7 +163,7 @@ class IntegrationRouter {
             this.getStatus(request, response, next);
         });
         // TODO: chenge post to delete
-        this.router.post('/delete', (request, response, next) => {
+        this.router.delete('/delete', (request, response, next) => {
             this.deleteKey(request, response, next);
         });
         this.router.put('/status', (request, response, next) => {

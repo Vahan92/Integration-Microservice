@@ -1,0 +1,164 @@
+2018-10-31T10:04:38.620Z - [32minfo[39m: Listening onport 4500
+2018-10-31T10:04:38.630Z - [32minfo[39m: Data Base connection success ... test
+2018-10-31T10:11:15.984Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:11:15.986Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:12:00.737Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:12:00.737Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:12:19.256Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:12:19.256Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:16:34.296Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:16:34.297Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:17:40.229Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:17:40.230Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:18:57.855Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:18:57.856Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:21:39.634Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:21:39.634Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:21:52.554Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:21:52.555Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:23:05.753Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T10:23:05.754Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in

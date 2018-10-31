@@ -1,0 +1,1 @@
+2018-10-31T15:05:12.832Z - [31merror[39m: Database connection failed by: Error: connect ECONNREFUSED 127.0.0.1:5432

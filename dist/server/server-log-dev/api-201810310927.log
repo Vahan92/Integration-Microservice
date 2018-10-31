@@ -1,0 +1,8 @@
+::1 - - [31/Oct/2018:05:28:34 +0000] "PUT /api/v2/status HTTP/1.1" 200 2 "-" "PostmanRuntime/7.3.0"
+::1 - - [31/Oct/2018:05:28:49 +0000] "PUT /api/v2/status HTTP/1.1" 200 2 "-" "PostmanRuntime/7.3.0"
+::1 - - [31/Oct/2018:05:30:30 +0000] "POST /api/v2/status HTTP/1.1" 404 153 "-" "PostmanRuntime/7.3.0"
+::1 - - [31/Oct/2018:05:30:58 +0000] "PUT /api/v2/status?userKey=124&platform=magento&status=False HTTP/1.1" 200 2 "-" "PostmanRuntime/7.3.0"
+::1 - - [31/Oct/2018:05:31:03 +0000] "POST /api/v2/status?userKey=124&platform=magento&status=False HTTP/1.1" 404 153 "-" "PostmanRuntime/7.3.0"
+::1 - - [31/Oct/2018:05:31:07 +0000] "PUT /api/v2/status?userKey=124&platform=magento&status=False HTTP/1.1" 200 2 "-" "PostmanRuntime/7.3.0"
+::1 - - [31/Oct/2018:05:49:03 +0000] "PUT /api/v2/status HTTP/1.1" 200 2 "-" "PostmanRuntime/7.3.0"
+::1 - - [31/Oct/2018:06:05:48 +0000] "PUT /api/v2/status HTTP/1.1" 200 2 "-" "PostmanRuntime/7.3.0"

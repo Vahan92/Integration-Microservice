@@ -183,7 +183,7 @@ class IntegrationRouter {
     });
 
     // TODO: chenge post to delete
-    this.router.post('/delete', (request: Request, response: Response, next: NextFunction): void => {
+    this.router.delete('/delete', (request: Request, response: Response, next: NextFunction): void => {
       this.deleteKey(request, response, next);
     });
 

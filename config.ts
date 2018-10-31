@@ -35,4 +35,19 @@ export const SERVER_CONFIG = {
             port: '4500',
         },
     },
+    test: {
+        db: {
+            database: 'testdb',
+            host: 'localhost',
+            password: 'root',
+            port: '5433',
+            user: 'armine_ha',
+        },
+        server: {
+            baseURL: '/api/v2',
+            logDir: 'server-log-dev',
+            logLevel: 'debug',
+            port: '4500',
+        },
+    },
 };

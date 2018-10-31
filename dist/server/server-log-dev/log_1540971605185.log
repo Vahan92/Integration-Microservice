@@ -1,0 +1,38 @@
+2018-10-31T07:40:05.240Z - [32minfo[39m: Listening onport 4500
+2018-10-31T07:40:05.250Z - [32minfo[39m: Data Base connection success ... test
+2018-10-31T07:41:16.045Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T07:41:16.047Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T07:41:23.494Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
+2018-10-31T07:41:23.494Z - [31merror[39m:  message=invalid input value for enum platforms: "Zaza", stack=error: invalid input value for enum platforms: "Zaza"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=99, severity=ERROR, code=22P02, detail=undefined, hint=undefined, position=95, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=enum.c, line=60, routine=enum_in
