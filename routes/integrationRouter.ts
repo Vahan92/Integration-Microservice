@@ -1,5 +1,7 @@
 import { NextFunction, Request, Response, Router } from 'express';
 
+console.log('2222');
+
 // Modules from this project
 import { Integration } from "../model/integration";
 

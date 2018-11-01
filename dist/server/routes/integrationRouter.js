@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
+console.log('2222');
 // Modules from this project
 const integration_1 = require("../model/integration");
 // Utils

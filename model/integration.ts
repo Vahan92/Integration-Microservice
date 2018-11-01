@@ -1,9 +1,11 @@
+console.log('3333');
 import { db } from '../database/database';
 import { winstonLogger } from '../utilities/logger';
 
 import * as NodeRSA from 'node-rsa';
 import * as jwt from 'jsonwebtoken';
 import * as crypto from 'crypto';
+
 
 export class Integration {
 

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+console.log('3333');
 const database_1 = require("../database/database");
 const logger_1 = require("../utilities/logger");
 const NodeRSA = require("node-rsa");

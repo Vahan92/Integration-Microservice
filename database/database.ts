@@ -6,6 +6,7 @@ import { SERVER_CONFIG } from '../config';
 import { winstonLogger } from '../utilities/logger';
 import { ConfigManager } from '../utilities/configManager';
 
+console.log('44444');
 class Database {
 
   private db: IDatabase<any>;

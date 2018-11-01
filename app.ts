@@ -8,6 +8,8 @@ import * as logger from 'morgan';
 
 import { Application, NextFunction, Request, Response, Router } from 'express';
 
+console.log('1111');
+
 // Router Modules
 import { integrationRouter } from './routes/integrationRouter';
 

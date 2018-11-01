@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const pgPromise = require("pg-promise");
 const logger_1 = require("../utilities/logger");
 const configManager_1 = require("../utilities/configManager");
+console.log('44444');
 class Database {
     constructor() {
         this.init();

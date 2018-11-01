@@ -1,0 +1,2 @@
+2018-11-01T06:54:41.709Z - [32minfo[39m: Listening onport 4500
+2018-11-01T06:54:41.822Z - [31merror[39m: Database connection failed by: Error: getaddrinfo ENOTFOUND localhost111 localhost111:5433

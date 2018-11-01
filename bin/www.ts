@@ -3,6 +3,8 @@
 /**
  * Module dependencies.
  */
+console.log('0000');
+
 import * as fs from 'fs';
 import * as http from 'http';
 import * as https from 'https';
@@ -93,5 +95,5 @@ function onListening() {
     const bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port;
-    winstonLogger.info('Listening on' + bind);
+    winstonLogger.info('Listening on ' + bind);
 }

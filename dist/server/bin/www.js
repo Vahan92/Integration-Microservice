@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+console.log('0000');
 const fs = require("fs");
 const http = require("http");
 const https = require("https");
@@ -81,6 +82,6 @@ function onListening() {
     const bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port;
-    logger_1.winstonLogger.info('Listening on' + bind);
+    logger_1.winstonLogger.info('Listening on ' + bind);
 }
 //# sourceMappingURL=/home/armine_ha/Desktop/integration-microservice/dist/server/bin/www.js.map

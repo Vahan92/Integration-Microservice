@@ -1,12 +1,30 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const chai_1 = require("chai");
+const database_1 = require("../database/database");
+const winston = require("winston");
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const should = require('chai').should();
-const database_1 = require("../database/database");
 chai.use(chaiHttp);
 const baseUrl = 'http://localhost:4500/api/v2';
+const includeKeys = ['code', 'message'];
+if (process.env.NODE_ENV !== 'test') {
+    let logger = new (winston.Logger)({
+        transports: [
+            new (winston.transports.Console)(),
+            new (winston.transports.File)({ filename: 'foo.log' })
+        ]
+    });
+}
+else {
+    // while testing, log only to file, leaving stdout free for unit test status messages
+    let logger = new (winston.Logger)({
+        transports: [
+            new (winston.transports.File)({ filename: 'foo.log' })
+        ]
+    });
+}
 describe('Test API s', () => {
     before((done) => {
         filldb.then(result => {
@@ -16,21 +34,26 @@ describe('Test API s', () => {
             done(err);
         });
     });
-    describe('Get request', () => {
+    describe('Get status by user key', () => {
         it('it should GET an array with 1 object', (done) => {
             const authKey = '124';
             chai.request(baseUrl)
                 .get('/platforms')
                 .set('auth-key', authKey)
                 .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('array');
-                res.body.length.should.be.eql(1);
-                chai_1.expect(res.body).to.deep.equal([{
-                        "platform": "magento",
-                        "status": false
-                    }]);
-                done();
+                try {
+                    res.should.have.status(200);
+                    res.body.should.be.a('array');
+                    res.body.length.should.be.eql(1);
+                    chai_1.expect(res.body).to.deep.equal([{
+                            "platform": "magento",
+                            "status": false
+                        }]);
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('it should GET an array with 2 objects', (done) => {
@@ -39,28 +62,38 @@ describe('Test API s', () => {
                 .get('/platforms')
                 .set('auth-key', authKey)
                 .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('array');
-                res.body.length.should.be.eql(2);
-                chai_1.expect(res.body).to.deep.equal([{
-                        "platform": "wordpress",
-                        "status": false
-                    },
-                    {
-                        "platform": "magento",
-                        "status": true
-                    }]);
-                done();
+                try {
+                    res.should.have.status(200);
+                    res.body.should.be.a('array');
+                    res.body.length.should.be.eql(2);
+                    chai_1.expect(res.body).to.deep.equal([{
+                            "platform": "wordpress",
+                            "status": false
+                        },
+                        {
+                            "platform": "magento",
+                            "status": true
+                        }]);
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('the auth-key is missing', (done) => {
             chai.request(baseUrl)
                 .get('/platforms')
                 .end((err, res) => {
-                res.should.have.status(401);
-                res.body.should.be.a('array');
-                chai_1.expect(res.body.length).to.be.eql(0);
-                done();
+                try {
+                    res.should.have.status(401);
+                    res.body.should.be.a('array');
+                    chai_1.expect(res.body.length).to.be.eql(0);
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('the auth-key is invalid', (done) => {
@@ -69,17 +102,23 @@ describe('Test API s', () => {
                 .get('/platforms')
                 .set('auth-key', invalideAuthKey)
                 .end((err, res) => {
-                res.should.have.status(403);
-                res.body.should.be.a('array');
-                chai_1.expect(res.body.length).to.be.eql(0);
-                done();
+                try {
+                    res.should.have.status(403);
+                    res.body.should.be.a('array');
+                    chai_1.expect(res.body.length).to.be.eql(0);
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
     });
-    describe('GET /keys/:platform', () => {
-        var platform;
+    describe('Get keys', () => {
+        let platform, invalReq;
         before(() => {
             platform = 'wordpress';
+            invalReq = { "code": 325, "message": "Invalid request parameters" };
         });
         it('it should return an object with data', (done) => {
             const clientId = '143';
@@ -87,22 +126,32 @@ describe('Test API s', () => {
                 .get(`/keys/${platform}`)
                 .set('client-id', clientId)
                 .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.have.keys(['key', 'private_key', 'client_id']);
-                chai_1.expect(res.body).to.include({ "key": "144", "private_key": "145", "client_id": "143" });
-                done();
+                try {
+                    res.should.have.status(200);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.have.keys(['key', 'private_key', 'client_id']);
+                    chai_1.expect(res.body).to.include({ "key": "144", "private_key": "145", "client_id": "143" });
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('no client id', (done) => {
             chai.request(baseUrl)
                 .get(`/keys/${platform}`)
                 .end((err, res) => {
-                res.should.have.status(400);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.have.keys(['code', 'message']);
-                chai_1.expect(res.body).to.include({ "code": 325, "message": "Invalid request parameters" });
-                done();
+                try {
+                    res.should.have.status(400);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.have.keys(includeKeys);
+                    chai_1.expect(res.body).to.include(invalReq);
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('incorrect platform', (done) => {
@@ -112,9 +161,14 @@ describe('Test API s', () => {
                 .get(`/keys/${incorrectPlatform}`)
                 .set('client-id', clientId)
                 .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object').that.is.empty;
-                done();
+                try {
+                    res.should.have.status(200);
+                    res.body.should.be.a('object').that.is.empty;
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('incorrect client id', (done) => {
@@ -123,15 +177,20 @@ describe('Test API s', () => {
                 .get(`/keys/${platform}`)
                 .set('client-id', incorrectClientId)
                 .end((err, res) => {
-                res.should.have.status(400);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.have.keys(['code', 'message']);
-                chai_1.expect(res.body).to.include({ "code": 325, "message": "Invalid request parameters" });
-                done();
+                try {
+                    res.should.have.status(400);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.have.keys(includeKeys);
+                    chai_1.expect(res.body).to.include(invalReq);
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
     });
-    describe('Updating...', () => {
+    describe('Updating status...', () => {
         it('it should return status and platform', (done) => {
             chai.request(baseUrl)
                 .put('/status')
@@ -141,21 +200,31 @@ describe('Test API s', () => {
                 "status": "True"
             })
                 .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.have.keys(['status', 'platform']);
-                chai_1.expect(res.body).to.include({ "status": "True", "platform": "magento" });
-                done();
+                try {
+                    res.should.have.status(200);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.have.keys(['status', 'platform']);
+                    chai_1.expect(res.body).to.include({ "status": "True", "platform": "magento" });
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('it should return an object with "No Content" message', (done) => {
             chai.request(baseUrl)
                 .put('/status')
                 .end((err, res) => {
-                res.should.have.status(204);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.include({ "code": 204, "message": "No Content" });
-                done();
+                try {
+                    res.should.have.status(204);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.include({ "code": 204, "message": "No Content" });
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('it should return an object with "Not Found" message', (done) => {
@@ -167,14 +236,19 @@ describe('Test API s', () => {
                 "status": "True"
             })
                 .end((err, res) => {
-                res.should.have.status(404);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.include({ "code": 404, "message": "Not Found" });
-                done();
+                try {
+                    res.should.have.status(404);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.include({ "code": 404, "message": "Not Found" });
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
     });
-    describe('Deleting...', () => {
+    describe('Deleting keys...', () => {
         it('it should return an object with data', (done) => {
             chai.request(baseUrl)
                 .del('/delete')
@@ -183,11 +257,16 @@ describe('Test API s', () => {
                 "platform": "wordpress"
             })
                 .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.have.keys(['status', 'platform']);
-                chai_1.expect(res.body).to.include({ "status": false, "platform": "wordpress" });
-                done();
+                try {
+                    res.should.have.status(200);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.have.keys(['status', 'platform']);
+                    chai_1.expect(res.body).to.include({ "status": false, "platform": "wordpress" });
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('it should return an object with status True', (done) => {
@@ -198,11 +277,16 @@ describe('Test API s', () => {
                 "platform": "magento"
             })
                 .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object');
-                chai_1.expect(res.body).to.have.keys(['status', 'platform']);
-                chai_1.expect(res.body).to.include({ "status": true, "platform": "magento" });
-                done();
+                try {
+                    res.should.have.status(200);
+                    res.body.should.be.a('object');
+                    chai_1.expect(res.body).to.have.keys(['status', 'platform']);
+                    chai_1.expect(res.body).to.include({ "status": true, "platform": "magento" });
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('it should return an empty object', (done) => {
@@ -210,9 +294,14 @@ describe('Test API s', () => {
                 .del('/delete')
                 .send({})
                 .end((err, res) => {
-                res.should.have.status(200);
-                chai_1.expect(res.body).to.equal({});
-                done();
+                try {
+                    res.should.have.status(200);
+                    chai_1.expect(res.body).to.equal({});
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
         it('it should return an object with error message', (done) => {
@@ -224,10 +313,15 @@ describe('Test API s', () => {
                 "platform": incorrectPlatform
             })
                 .end((err, res) => {
-                res.should.have.status(400);
-                chai_1.expect(res.body).to.have.keys(['code', 'message']);
-                chai_1.expect(res.body).to.contain({ "code": 325, "message": `Invalid request parameterserror: invalid input value for enum platforms: \"${incorrectPlatform}\"` });
-                done();
+                try {
+                    res.should.have.status(400);
+                    chai_1.expect(res.body).to.have.keys(includeKeys);
+                    chai_1.expect(res.body).to.contain({ "code": 325, "message": `Invalid request parameterserror: invalid input value for enum platforms: \"${incorrectPlatform}\"` });
+                    done();
+                }
+                catch (e) {
+                    done(e);
+                }
             });
         });
     });

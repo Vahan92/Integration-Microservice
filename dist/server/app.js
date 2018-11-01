@@ -7,6 +7,7 @@ const cors = require("cors");
 const express = require("express");
 const helmet = require("helmet");
 const logger = require("morgan");
+console.log('1111');
 // Router Modules
 const integrationRouter_1 = require("./routes/integrationRouter");
 // Modules from this project
