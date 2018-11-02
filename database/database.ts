@@ -5,6 +5,7 @@ import * as pgPromise from 'pg-promise';
 import { SERVER_CONFIG } from '../config';
 import { winstonLogger } from '../utilities/logger';
 import { ConfigManager } from '../utilities/configManager';
+import {currentServer} from '../bin/www';
 
 console.log('44444');
 class Database {
@@ -28,7 +29,7 @@ class Database {
       })
       .catch((err) => {
         winstonLogger.error('Database connection failed by: ' + err);
-        // TODO: halt the server to avoid issues
+          currentServer.close();        
       });
   }
 }

@@ -10,23 +10,6 @@ chai.use(chaiHttp);
 const baseUrl = 'http://localhost:4500/api/v2';
 const includeKeys = ['code', 'message'];
 
-if (process.env.NODE_ENV !== 'test') {
-  let logger = new (winston.Logger)({
-    transports: [
-      new (winston.transports.Console)(),
-      new (winston.transports.File)({ filename: 'foo.log' })
-    ]
-  });
-} else {
-  // while testing, log only to file, leaving stdout free for unit test status messages
-  let logger = new (winston.Logger)({
-    transports: [
-      new (winston.transports.File)({ filename: 'foo.log' })
-    ]
-  });
-}
-
-
 describe('Test API s', () => {
 
   before((done) => {

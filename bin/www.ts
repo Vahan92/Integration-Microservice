@@ -11,6 +11,8 @@ import * as https from 'https';
 import { app } from '../app';
 import { ConfigManager } from '../utilities/configManager';
 import { winstonLogger } from '../utilities/logger';
+import enableTerminate from 'server-terminate';
+
 
 /**
  * Get port from environment and store in Express.
@@ -97,3 +99,5 @@ function onListening() {
         : 'port ' + addr.port;
     winstonLogger.info('Listening on ' + bind);
 }
+
+export let currentServer = server;

@@ -2,29 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const chai_1 = require("chai");
 const database_1 = require("../database/database");
-const winston = require("winston");
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const should = require('chai').should();
 chai.use(chaiHttp);
 const baseUrl = 'http://localhost:4500/api/v2';
 const includeKeys = ['code', 'message'];
-if (process.env.NODE_ENV !== 'test') {
-    let logger = new (winston.Logger)({
-        transports: [
-            new (winston.transports.Console)(),
-            new (winston.transports.File)({ filename: 'foo.log' })
-        ]
-    });
-}
-else {
-    // while testing, log only to file, leaving stdout free for unit test status messages
-    let logger = new (winston.Logger)({
-        transports: [
-            new (winston.transports.File)({ filename: 'foo.log' })
-        ]
-    });
-}
 describe('Test API s', () => {
     before((done) => {
         filldb.then(result => {

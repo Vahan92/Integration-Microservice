@@ -1,0 +1,84 @@
+2018-11-02T08:15:26.601Z - [32minfo[39m: Listening on port 4500
+2018-11-02T08:15:26.602Z - [32minfo[39m: Listening on port 4500
+2018-11-02T08:15:26.609Z - [31merror[39m: Database connection failed by: error: password authentication failed for user "armine_h"
+2018-11-02T08:20:10.943Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:10.975Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:10.987Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:10.998Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:11.008Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:11.016Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:11.025Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:11.049Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed
+2018-11-02T08:20:11.049Z - [31merror[39m:  message=password authentication failed for user "armine_h", stack=error: password authentication failed for user "armine_h"
+    at Connection.parseE (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/home/armine_ha/Desktop/integration-microservice/node_modules/pg/lib/connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20), name=error, length=104, severity=FATAL, code=28P01, detail=undefined, hint=undefined, position=undefined, internalPosition=undefined, internalQuery=undefined, where=undefined, schema=undefined, table=undefined, column=undefined, dataType=undefined, constraint=undefined, file=auth.c, line=336, routine=auth_failed

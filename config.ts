@@ -41,7 +41,7 @@ export const SERVER_CONFIG = {
             host: 'localhost',
             password: 'root',
             port: '5433',
-            user: 'armine_ha',
+            user: 'armine_h',
         },
         server: {
             baseURL: '/api/v2',

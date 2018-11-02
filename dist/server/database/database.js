@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const pgPromise = require("pg-promise");
 const logger_1 = require("../utilities/logger");
 const configManager_1 = require("../utilities/configManager");
+const www_1 = require("../bin/www");
 console.log('44444');
 class Database {
     constructor() {
@@ -20,7 +21,7 @@ class Database {
         })
             .catch((err) => {
             logger_1.winstonLogger.error('Database connection failed by: ' + err);
-            // TODO: halt the server to avoid issues
+            www_1.currentServer.close();
         });
     }
 }

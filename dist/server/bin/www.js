@@ -84,4 +84,5 @@ function onListening() {
         : 'port ' + addr.port;
     logger_1.winstonLogger.info('Listening on ' + bind);
 }
+exports.currentServer = server;
 //# sourceMappingURL=/home/armine_ha/Desktop/integration-microservice/dist/server/bin/www.js.map
